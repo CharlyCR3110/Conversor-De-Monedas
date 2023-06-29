@@ -16,6 +16,12 @@ public class App {
 
         // Obtener la cantidad que se quiere convertir
         String valor = JOptionPane.showInputDialog("Ingresa un valor para convertir");
+        // si el usuario no ingresa un valor o ingresa un valor vacio
+        if (valor == null || valor.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "No se ingreso un valor");
+            return;
+        }
+
         // se hace un parse a double
         double cantidadDeDinero = Double.parseDouble(valor);
 
