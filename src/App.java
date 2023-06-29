@@ -24,6 +24,11 @@ public class App {
         JOptionPane.showMessageDialog(null, comboBox, "Seleccione la moneda de destino", JOptionPane.QUESTION_MESSAGE);
         // Obtener la opción seleccionada
         String monedaDestino = (String) comboBox.getSelectedItem();
+        
+        if (monedaOrigen.equals(monedaDestino)) {
+            JOptionPane.showMessageDialog(null, "No se puede convertir a la misma moneda");
+            return;
+        }
 
         // se crean los objetos
         Moneda objMonedaOrigen = Utiles.encontrarMoneda(monedaOrigen);
