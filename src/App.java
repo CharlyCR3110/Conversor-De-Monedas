@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 public class App {
     public static void main(String[] args) throws Exception {
         // Definir las opciones para la lista desplegable
-        String[] opcionesTipoDeMoneda = {"Colones", "Dolares", "Pesos Mexicanos"}; 
+        String[] opcionesTipoDeMoneda = {"Colones", "Dolares", "Pesos Mexicanos", "Euros", "Yenes"}; 
 
         // Preguntar la moneda de origen
         // Crear el componente JComboBox con las opciones
